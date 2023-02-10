@@ -1,0 +1,40 @@
+<DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>memo</title>
+    <style>
+      #save-button, #clear-button {
+        display: inline-block;
+        width: 20%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        text-align: center;
+        float: right;
+        border-radius: 50px;
+      }
+      #save-button {
+        margin-left: 5px;
+      }
+      button:hover {
+        background-color: #a9a9a9;
+        border-color: #a9a9a9;
+        transition: 0.5s;
+        cursor: pointer;
+      }
+      #note-text {
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="notes">
+      <textarea maxlength="5000" id="note-text" rows="10" cols="50"></textarea>
+      <button id="save-button">Save</button>
+      <button id="clear-button">Delete</button>
+      <script src="popup.js"></script>
+    </div>
+  </body>
+</html>
